@@ -92,18 +92,18 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # }
 
 
-DATABASES = {
-    'default': dj_database_url.config()
-}
-
+# DATABASES = {
+#     'default': dj_database_url.config()
+# }
+# print(dj_database_url.config())
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', 
-        'NAME': 'django-blog-again',                     
-        'USER': 'walshejohnnyw7@gmail.com',
-        'PASSWORD': 'Sunshine7!',
-        'HOST': 'postgres://lcgswadp:TreI4Vt_wumtU2HMcjVj9jnultkVLt1m@flora.db.elephantsql.com/lcgswadp', # Or something like this
-        'PORT': '5432',                     
+        'NAME': 'lcgswadp',                     
+        'USER': 'lcgswadp',
+        'PASSWORD': 'TreI4Vt_wumtU2HMcjVj9jnultkVLt1m',
+        'HOST': 'flora.db.elephantsql.com', # Or something like this
+        'PORT': '',                     
     }
 }
 
