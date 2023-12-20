@@ -93,7 +93,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 
 
 DATABASES = {
-    # "ENGINE": "django.db.backends.postgresql",
+    "ENGINE": "django.db.backends.postgresql",
     'default': dj_database_url.config()
 }
 
