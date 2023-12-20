@@ -91,12 +91,9 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 #     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 # }
 
-ON_HEROKU = os.environ.get('ON_HEROKU')
-HEROKU_SERVER = os.environ.get('HEROKU_SERVER')
-
 
 DATABASES = {
-    "ENGINE": "django.db.backends.postgresql",
+    # "ENGINE": "django.db.backends.postgresql",
     'default': dj_database_url.config()
 }
 
