@@ -1,1 +1,1 @@
-web: waitress-serve --trusted-proxy '*'  codestar.wsgi:application                
+web: waitress-serve  codestar.wsgi:application                
