@@ -96,6 +96,17 @@ DATABASES = {
     'default': dj_database_url.config()
 }
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', 
+        'NAME': 'django-blog-again',                     
+        'USER': 'walshejohnnyw7@gmail.com',
+        'PASSWORD': 'Sunshine7!',
+        'HOST': 'django-blog-again-beec99fa3022.herokuapp.com/', # Or something like this
+        'PORT': '5432',                     
+    }
+}
+
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeanyapp.com",
     "https://*.herokuapp.com",
