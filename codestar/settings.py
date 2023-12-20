@@ -91,7 +91,7 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.config())
+    'default': dj_database_url.config()
 }
 
 # Password validation
