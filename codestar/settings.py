@@ -46,6 +46,8 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -95,14 +97,13 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # DATABASES = {
 #     'default': dj_database_url.config()
 # }
-# print(dj_database_url.config())
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', 
         'NAME': 'lcgswadp',                     
         'USER': 'lcgswadp',
         'PASSWORD': 'TreI4Vt_wumtU2HMcjVj9jnultkVLt1m',
-        'HOST': 'flora.db.elephantsql.com', # Or something like this
+        'HOST': 'flora.db.elephantsql.com', 
         'PORT': '',                     
     }
 }
@@ -147,7 +148,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
