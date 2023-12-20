@@ -74,6 +74,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'codestar.wsgi.application'
 
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
