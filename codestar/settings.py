@@ -103,6 +103,7 @@ else:
 # DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
 
 DATABASES = {
+    "ENGINE": "django.db.backends.postgresql",
     'default': dj_database_url.config()
 }
 
