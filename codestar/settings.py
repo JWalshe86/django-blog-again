@@ -102,7 +102,7 @@ DATABASES = {
         'NAME': 'django-blog-again',                     
         'USER': 'walshejohnnyw7@gmail.com',
         'PASSWORD': 'Sunshine7!',
-        'HOST': 'django-blog-again-beec99fa3022.herokuapp.com/', # Or something like this
+        'HOST': 'postgres://lcgswadp:TreI4Vt_wumtU2HMcjVj9jnultkVLt1m@flora.db.elephantsql.com/lcgswadp', # Or something like this
         'PORT': '5432',                     
     }
 }
